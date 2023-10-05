@@ -1,0 +1,301 @@
+html{
+    font-family: 'Montserrat';
+}
+
+.header{
+    text-align: center;
+    margin: auto;
+    background-color: #3f4c8e;
+}
+
+.header_logo {
+    width: 5em;
+    height: auto;
+}
+
+.header_nav{
+    background-color: #3f4c8e;
+    display: none;
+}
+
+.header_nav.show{
+    display: block;
+}
+
+ul{
+    margin: 0;
+}
+
+.header_nav ul{
+    list-style-type: none;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: .8em;
+}
+
+.header_nav a{
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+}
+
+.header_nav a:hover{
+    background-color: color-mix(in srgb, #04187b, #ffffff 50%);
+}
+
+.header_logo{
+    width: 5.9em;
+    height: 100%;
+    margin: 1em;
+}
+
+#hamburguer{
+    background-color: #04187b;
+    color: #0D0D0D;
+    display: block;
+    text-align: center;
+    padding: 0.3em;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+.fundo_main{
+    background-image: url(imagens/fundo-editado.png);
+    height: 800px;
+    background-size: cover;
+    background-position: right center;
+    padding-top: 1px;
+    background-attachment: fixed;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+}
+
+.primeirainfo{
+    margin: 250px auto 0 auto;
+    width: 100%;
+    text-align: center;
+    color: #04187b;
+}
+
+.logotipo{
+    width: 2.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+@media screen and (min-width: 48em){
+
+    #hamburguer{
+        display: none;
+    }
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #04187b;
+    }
+
+    .header_logo{
+        margin-left: 2em;
+    }
+
+    .header_nav{
+        display: block;
+        background-color: initial;
+    }
+
+    .header_nav ul{
+        margin-right: 2em;
+        font-size: .9em;
+    }
+
+    .header_nav li{
+        display: inline-block;
+    }
+
+    .header_nav a{
+        border-radius: 5px;
+    }
+
+    .header_nav a:hover{
+        background-color: color-mix(in srgb, #04187b, #ffffff 50%);
+    }
+}
+
+.video{
+    background-color: #E4F2EB;
+    padding-bottom: 1.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    line-height: 1.5em;
+}
+
+.video div{
+    text-align: center;
+    margin: auto;
+    width: 80%;
+}
+
+.video_titulo{
+    margin-top: 0;
+    padding-top: .5em;
+    color: #04187b;
+}
+
+.video h1{
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+.video_paragrafo{
+    font-size: 1.1em;
+}
+
+.video_botao{
+    display: inline-block;
+    margin-top: 1em;
+    padding: 1em 2em;
+    background-color: #04187b;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.video_botao:hover{
+    background-color: color-mix(in srgb, #04187b, #ffffff 20%);
+}
+
+.video_video{
+    display: none;
+}
+
+@media screen and (min-width: 48em){
+
+    .video_botao{
+        display: none;
+    }
+
+    .video{
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-color: initial;
+    }
+
+    .video_video {
+        display: block;
+    }
+
+    .video_video .tamanho{
+        border-radius: .8em;
+        margin-bottom: 1em;
+    }
+
+    .video_paragrafo{
+        margin-bottom: 2em;
+    }
+
+}
+
+.video_botao_article{
+    display: inline-block;
+    margin-top: 1em;
+    padding: 1em 2em;
+    background-color: #04187b;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase
+}
+
+.video_botao_article:hover{
+    background-color: color-mix(in srgb, #04187b, #ffffff 20%);
+}
+
+.main_content{
+    background-color: #606999;
+    text-align: left;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.main_content div{
+    margin: auto;
+    padding: 1em;
+    width: 80%;
+}
+
+.main_content_title{
+    color: #04187b;
+    text-align: justify;
+}
+
+.icon_img{
+    width: 2.5em;
+}
+
+.icon_img:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+}
+
+.icon_img{
+    transform: scale(1);
+    transition: transform 0.5s ease-in-out;
+}
+.row{
+    display: block;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.par{
+    flex: 1 0 auto;
+    width: 50%;
+}
+
+.par-1{
+    width: 50%;
+}
+
+.logotipo{
+    width: 2.5em;
+    flex-direction: row;
+    justify-content: center;
+    gap:1.5em;
+}
+
+
+@media screen and (min-width: 48em){
+    .par-2{
+        width: 50%;
+    }
+}
+
+footer{
+    background-color: #04187b;
+    color: #ffffff;
+    padding: 0.5em;
+    text-align: center;
+
+}
+
+.fonte{
+    font-family: 'Montserrat';
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color:#04187b;
+
+}
+
+
+.coluna {
+    padding: 2em 2em;
+    }
